@@ -124,6 +124,8 @@ if __name__ == '__main__':
         data_dict['ip'] = masked_ip
         data_dict['device_id'] = masked_device_id
         data_dict['create_date'] = date
+
+        #app_version should be an integer
         data_dict['app_version'] = int(data_dict['app_version'].split('.')[0])
         try:
             cursor.execute(insert_query.format(
