@@ -24,7 +24,7 @@
 
 ###QnA:
 1. How would you deploy this application in production?
-Create a new docker container which will contain the application file and can run it. 
+Create a new docker container which will contain the application file and can run it. This however, will not contain localstack service assuming we'd be connecting to an SQS. The connection to queue part will be changed, if the data needs to go in a production db right from the queue, the container with service postgres also won't be required. 
 Once the docker containers for db and localstack are running the new docker container should be able to run the application.
 Use some orchestration tool to schedule and automate running the application like AWS datapipeline or run Apache Airflow on AWS
 
