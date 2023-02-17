@@ -10,6 +10,7 @@
 
 ### Steps to run:
 - Clone the repository `git clone https://https://github.com/chaitanya2903/fetch_takehome_asgn.git`
+- Open the file `fetch_sqs_etl.py` in a code editor and replace `'replace-with-aws-access-key-id'` (line 77) and `'replace-with-aws-secret-access-key'` (line 78) with aws credentials as a string.
 - Open up a different shell, cd into the repo and enter `docker-compose up`
 - Once the docker containers are up and running,  type `python fetch_sqs_etl.py` to run the application
 
